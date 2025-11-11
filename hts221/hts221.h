@@ -10,6 +10,7 @@
 
 /* USER CODE BEGIN Includes */
 #include "main.h"
+#include "hts221_map.h"
 /* USER CODE END Includes */
 
 /* Special Macros BEGIN */

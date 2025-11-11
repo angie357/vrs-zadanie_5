@@ -5,7 +5,7 @@
  *      Author: PC1
  */
 
-#include "HTS221.h"
+#include "hts221.h"
 
 const double inv_2 = 1.0 / 2.0;
 const double inv_8 = 1.0 / 8.0;

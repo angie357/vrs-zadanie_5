@@ -6,7 +6,8 @@
  */
 
 
-#include "LPS25HB.h"
+#include "lps25hb.h"
+
 
 uint8_t LPS25HB_f_deviceConnected;
 float referencePressure;
@@ -93,8 +94,7 @@ float LPS25HB_get_press()
 	uint32_t pressure = (uint32_t)(((uint32_t)rawPressure[0]   << 0)  |
 			 	 	 	 	 	   ((uint32_t)(rawPressure[1]) << 8)  |
 								   ((uint32_t)(rawPressure[2]) << 16));
-	if(minusSign)
-		pressure |= 0x80000000U;
+	if(minusSign) pressure |= 0x80000000U;
 
 	return clampOutput((int32_t)pressure / 4096.0, LPS25HB_PRESS_MIN, LPS25HB_PRESS_MAX);
 }

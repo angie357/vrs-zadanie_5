@@ -12,6 +12,7 @@
 /* USER CODE BEGIN Includes */
 #include "main.h"
 #include "math.h"
+#include "lps25hb_map.h"
 /* USER CODE END Includes */
 
 /* Special Macros BEGIN */
